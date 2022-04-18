@@ -5,10 +5,18 @@ import java.util.ArrayList;
 // java qui crée un ArrayList des livres Africains et Affichez la collection
 
 public class Collection1 {
+    protected static ArrayList<String> livres = new ArrayList<>();
     public static void main(String[] args) {
 
-        ArrayList<String> livres = new ArrayList<>();
-   
+        AddLivre("Nation négre et culture");
+        
         System.out.println("Les livres sont: " + livres);
+    }
+    protected static void AddLivre(String livre) {
+        livres.add(livre);
+    }
+
+    protected static void GetLivre(int i){
+        livres.get(i);
     }
 }
